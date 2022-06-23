@@ -27,10 +27,13 @@ let dict = [
 let a = 0;
 let r = Math.trunc(Math.random() * 21);
 function handleChange(e) {
+  let x = e.target.value;
   //Si hubieron menos de 6 intentos
   if (a < 6) {
     console.log(e.target.value);
     if (e.target.value.length != 5) {
+    }
+    else if (!dict.include(x)) {
     }
     else {
       let i = 0;
